@@ -7,15 +7,15 @@ class DynamicArray:
 
     ---
     `Атрибуты`
-    * `length`   - число элементов arr.
-    * `capacity` - размер массива (количество выделенных ячеек для массива arr).
+    * `length`   - число элементов arr
+    * `capacity` - размер массива (количество выделенных ячеек для массива arr)
 
     `Методы`
-    * push(n)              - добавить n в конец.
-    * pop()                - удалить с конца.
-    * insert(index, value) - добавить value на позицию index.
-    * remove()             - удалить элемент на позиции index.
-    * _resize()            - увеличить размер массива. 
+    * push(n)              - добавить n в конец
+    * pop()                - удалить с конца
+    * insert(index, value) - добавить value на позицию index
+    * remove()             - удалить элемент на позиции index
+    * _resize()            - увеличить размер массива 
 
 
     `Отличительная особенность`
@@ -32,13 +32,10 @@ class DynamicArray:
     * [ ] Инкапсулировать переменные класса
     """
 
-    length   = 0
-    capacity = [0] * 2
-
     def __init__(self):
         self.arr      = []
         self.length   = 0
-        self.capacity = capacity
+        self.capacity = 2
         return None
 
 
